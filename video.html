@@ -7,11 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            background-color: aquamarine;
+            color: black;
+            font-size: 18px;
+            width: 50%;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <video id="video" src="production ID-5077814.mp4" controls></video>
-
+    <div class="center">
+        <video src="production ID-5077814.mp4" controls></video>
+        <button id="player-change-button" class="btn">Change The Player</button>
+    </div>
 
     <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
     <script src="vidoe.js"></script>
@@ -19,7 +43,7 @@
 
 </html>
 
-<!-- 
-<video class="video-js" data-setup="{}" controls>
+
+<!-- <video class="video-js" data-setup="{}" controls>
     <source src="production ID-5077814.mp4" />
 </video> -->
